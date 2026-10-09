@@ -1,0 +1,38 @@
+# TalkToDB Backend
+
+## Setup
+
+1. Create and activate a virtual environment:
+
+   ```bash
+   cd backend
+   python -m venv venv
+   # Windows: venv\Scripts\activate
+   # Linux/Mac: source venv/bin/activate
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Create a `.env` file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Edit `.env` and set:
+
+   - `GEMINI_API_KEY`=your API key
+
+4. Run the server:
+
+   ```bash
+   uvicorn app:app --reload --port 8000
+   ```
+
+5. Open docs in browser:
+
+   - http://localhost:8000/docs
